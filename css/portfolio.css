@@ -3,6 +3,7 @@
     font-family: Helvetica, sans-serif;
     margin: 0;
     scroll-behavior: smooth;
+    padding: 1em;
 }
 
 
@@ -12,7 +13,6 @@
     position: sticky;
     top: 0%;
     z-index: 100;
-    padding: 1em;
 }
 
 #navbar a {
@@ -47,7 +47,7 @@ z-index: -500;
 
 #menu {
     display: inline;
-    /* float: right; */
+    float: right;
 }
 
 #name {
