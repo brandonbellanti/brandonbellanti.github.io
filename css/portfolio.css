@@ -98,6 +98,39 @@ z-index: -500;
   background-color: white;
 }
 
+
+
+
+.work-list {
+  list-style: none;
+}
+.work-list >li {
+  position: relative;
+}
+.work-list>li:before {
+  content: '\25CF';
+  margin-right: 10px;
+  font-size: 20px;
+}
+.work-list>li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  border-left: 2px dotted black;
+  margin-left: 5px;
+  height: 100%;
+}
+.work-list >li:first-of-type:after {
+  top: 50%;
+}
+.work-list >li:last-of-type:after {
+  top: -50%;
+}
+
+
+
+
 .content * {
   padding: 1em;
 }
