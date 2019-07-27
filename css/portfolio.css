@@ -88,7 +88,9 @@ z-index: -500;
 
 .work-grid {
     display: grid;
-    grid-template-areas:    "grace""asc""tra";
+    grid-template-areas: "grace"
+                          "asc"
+                          "tra";
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: auto;
     grid-template-rows: 1fr;
