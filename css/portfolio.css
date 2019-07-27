@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 #navbar {
     background-color:rgba(255, 255, 255, 0.9);
     height: 60px;
@@ -45,7 +46,7 @@ z-index: -500;
 
 #menu {
     display: inline;
-    float: right;
+    /* float: right; */
 }
 
 #name {
@@ -53,8 +54,8 @@ z-index: -500;
     font-weight: bold;
 }
 
-#about {
-}
+/* #about {
+} */
 
 #interests {
     background-color: #F6F6F6;
@@ -87,8 +88,9 @@ z-index: -500;
 
 .work-grid {
     display: grid;
-    grid-template-areas:    "grace asc tra";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:    "grace""asc""tra";
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: auto;
     grid-template-rows: 1fr;
     grid-gap: 1em;
     padding: 0;
@@ -104,21 +106,28 @@ z-index: -500;
 .work-list {
   list-style: none;
 }
+
+.work-list * {
+  margin: initial;
+  padding:initial;
+}
+
 .work-list >li {
   position: relative;
 }
 .work-list>li:before {
   content: '\25CF';
-  margin-right: 10px;
-  font-size: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+  color: #2d3436;
 }
 .work-list>li:after {
   position: absolute;
   left: 0;
   top: 0;
   content: '';
-  border-left: 2px dotted black;
-  margin-left: 5px;
+  border-left: 3px solid #2d3436;
+  margin-left: 10px;
   height: 100%;
 }
 .work-list >li:first-of-type:after {
@@ -131,11 +140,6 @@ z-index: -500;
 
 
 
-.content * {
-  padding: 1em;
-}
-.content:not(#navbar) {
-}
 
 #contact {
 text-align: center;
