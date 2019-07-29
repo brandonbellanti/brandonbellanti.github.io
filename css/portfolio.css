@@ -6,7 +6,11 @@
 }
 
 body {
-  padding:1em;
+  padding:4em;
+}
+
+.section {
+  padding: 5em;
 }
 
 #navbar {
