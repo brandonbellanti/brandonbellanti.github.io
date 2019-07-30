@@ -7,10 +7,11 @@
     <title>Brandon Bellanti</title>
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/portfolio.js"></script>
 </head>
 <body>
-    <div id="navbar">
+    <!-- <div id="navbar" class="section">
         <div id="name">
             <a href="#navbar">Brandon Bellanti.</a>
         </div>
@@ -20,18 +21,29 @@
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
         </div>
-    
+    </div> -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Brandon Bellanti.</a>
+        <a href="#news">About</a>
+        <a href="#interests">Interests</a>  
+        <a href="#contact">Work</a>
+        <a href="#about">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
-    <div id="intro" class="white-background ">
-        <h1>Hi, I'm Brandon! I'm a library and information science student trying to understand how people look for and use information in their everyday routines.</h1>
+    <div id="intro" class="section ">
+        <h1>📚Hi, I'm Brandon! I'm a library and information science student trying to understand how people look for and use information in their everyday routines.</h1>
     </div>
 
     <!-- <div id="image">
         <img src="images/susan-yin-647448-unsplash.jpg" alt="library">
     </div> -->
 
-    <div id="about" class="white-background ">
+    <div id="about" class="section ">
         <h1>About</h1>
         <p>I’m passionate about seeing people succeed. Ultimately, I think people want to feel like they belong and are supported in their goals, whether at work or in life. My mission is to make sure they have access to the tools and information to do just that. </p>
         <p>I’m all about getting the right information to the right people in the right place at the right time.</p>
@@ -76,7 +88,7 @@
         </div>
     </div> 
 
-    <div id="work" class="white-background ">
+    <div id="work" class="section ">
         <h1>Work</h1>
     
         <div class="work-grid">
@@ -120,7 +132,7 @@
         <p>You can download my full CV here.</p>
     </div>
     
-    <div id="contact" class="white-background ">
+    <div id="contact" class="section ">
         <h1>Contact</h1>
         <a href="https://twitter.com/brandonbellanti" target="_blank"><img class="social-icon" src="images/iconfinder_Twitter_1298770.svg" alt="Link to Twitter"></a>
         <a href="https://linkedin.com/in/brandonbellanti" target="_blank"><img class="social-icon" src="images/iconfinder_LinkedIn_1298749.svg" alt="Link to LinkedIn"></a>
@@ -131,19 +143,7 @@
 
 
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Brandon Bellanti.</a>
-    <a href="#news">About</a>
-    <a href="#interests">Interests</a>  
-    <a href="#contact">Work</a>
-    <a href="#about">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-    </div>
+    
 
 </body>
 </html>
