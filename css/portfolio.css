@@ -3,6 +3,7 @@
     font-family: Helvetica, sans-serif;
     margin: 0;
     scroll-behavior: smooth;
+    font-size: large;
 }
 
 body {
@@ -167,7 +168,7 @@ text-align: initial;
 
 img.social-icon {
   display: inline;
-  padding: 1em;
+  padding: .5em;
   width: calc(20px + 10vw);
   filter: saturate(0);
   transition: transform .5s;
@@ -211,6 +212,14 @@ img.social-icon:hover {
 
     .section {
       padding: 1em;
+    }
+
+    .interests-grid p {
+      display: none;
+    }
+
+    #work p {
+      font-size: initial;
     }
 }
 
