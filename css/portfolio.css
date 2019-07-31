@@ -30,7 +30,6 @@ body {
     display:flex;
     height: calc(100vh - 60px);
     align-items: center;
-    padding: 0 5vw;
 }
 
 #intro h1 {
@@ -60,6 +59,13 @@ z-index: -500;
 /* #about {
 } */
 
+.skew {
+  transform:skewY(4deg)
+}
+
+.unskew {
+  transform:skewY(-4deg)
+}
 #interests {
     background-color: #F6F6F6;
 }
@@ -81,12 +87,12 @@ z-index: -500;
 
 
 .gridbox {
-    /* box-shadow: 5px 5px 10px 0px rgba(45,52,54,0.5); */
     align-content: center;
 }
 
 .gridbox:hover {
     background:#F6F6F6;
+
 }
 
 .work-grid {
@@ -101,6 +107,15 @@ z-index: -500;
     padding: 0;
 }
 
+.work-box {
+  transition: transform 1s;
+}
+
+.work-box:hover {
+  /* box-shadow: 5px 5px 10px 0px rgba(45,52,54,0.5); */
+  /* border-radius: 10px; */
+  /* transform: scale(1.05); */
+}
 
 
 .work-list {
@@ -150,10 +165,10 @@ text-align: initial;
 }
 
 
-
 img.social-icon {
   display: inline;
-  width: 8%;
+  padding: 1em;
+  width: calc(20px + 10vw);
   filter: saturate(0);
   transition: transform .5s;
 }
@@ -194,6 +209,9 @@ img.social-icon:hover {
         grid-gap: 1em;
     }
 
+    .section {
+      padding: 1em;
+    }
 }
 
 
