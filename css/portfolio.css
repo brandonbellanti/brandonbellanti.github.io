@@ -184,7 +184,7 @@ text-align: initial;
 
 img.social-icon {
   display: inline;
-  padding: 0 .5em;
+  padding: 0 calc(.5em + 1vw);
   width: calc(15px + 10vw);
   filter: saturate(0);
   transition: transform .5s;
