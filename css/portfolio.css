@@ -222,7 +222,7 @@ img.social-icon:hover {
     .about-grid {
       display: grid;
       grid-template-areas: "profile""bio";
-      grid-gap: 0;
+      grid-gap: 1em;
       align-items: center;
     }
     
