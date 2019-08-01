@@ -9,8 +9,12 @@
 body {
 }
 
+h1 {
+  font-size: calc(1em + 2vw);
+}
+
 .section {
-  padding: 5em;
+  padding: 3em 6em;
 }
 
 #navbar {
@@ -29,7 +33,7 @@ body {
 
 #intro {
     display:flex;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 6em);
     align-items: center;
 }
 
@@ -57,8 +61,20 @@ z-index: -500;
     font-weight: bold;
 }
 
-/* #about {
-} */
+
+.about-grid {
+  display: grid;
+  grid-template-areas: "profile bio";
+  grid-gap: 3em;
+  align-items: center;
+}
+
+
+#profile img {
+  border-radius: 50%;
+  width: 10em;
+  float:left;
+}
 
 .skew {
   transform:skewY(4deg)
@@ -168,15 +184,15 @@ text-align: initial;
 
 img.social-icon {
   display: inline;
-  padding: .5em;
-  width: calc(20px + 10vw);
+  padding: 0 .5em;
+  width: calc(15px + 10vw);
   filter: saturate(0);
   transition: transform .5s;
 }
 
 img.social-icon:hover {
   filter: saturate(100%);
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 
@@ -197,6 +213,25 @@ img.social-icon:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+
+    .about-grid {
+      display: grid;
+      grid-template-areas: "profile""bio";
+      grid-gap: 0;
+      align-items: center;
+    }
+    
+    
+    #profile img {
+      border-radius: 50%;
+      width: 8em;
+      margin-left:calc(50% - 4em);
+
+      /* justify-self: center; */
+    }
+
+
     #interests .interests-grid {
         display: grid;
         grid-template-areas:    "infoseek"
@@ -237,7 +272,7 @@ img.social-icon:hover {
   .topnav a {
     /* float: left; */
     display: block;
-    text-align: right;
+    float: right;
     padding: 14px 16px;
     text-decoration: none;
   }
