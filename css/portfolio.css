@@ -90,8 +90,8 @@ z-index: -500;
 
 #interests .interests-grid {
     display: grid;
-    grid-template-areas:    "infoseek sysdesign knowledgeman"
-                            "dataviz linkeddata usability";
+    grid-template-areas:    "textmining infoseek knowledgeman"
+                            "dataviz usability linkeddata";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
@@ -148,7 +148,7 @@ z-index: -500;
   position: absolute;
   top: 4px;
   left: calc(33% + 15px);
-  bottom: 50px;
+  bottom: 100px;
   width: 4px;
   background: #ddd;
 }
@@ -176,7 +176,7 @@ z-index: -500;
   position: absolute;
   width: 8px;
   height: 8px;
-  border: 4px solid salmon;
+  border: 4px solid #5092AF;
   background-color: #fff;
   border-radius: 100%;
   top: 15%;
@@ -242,9 +242,9 @@ img.social-icon:hover {
 @media only screen and (max-width: 800px) {
     #interests .interests-grid {
         display: grid;
-        grid-template-areas:    "infoseek sysdesign"
+        grid-template-areas:    "textmining infoseek"
                                 "knowledgeman dataviz"
-                                "linkeddata usability";
+                                "usability linkeddata";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 1em;
@@ -278,12 +278,12 @@ img.social-icon:hover {
 
     #interests .interests-grid {
         display: grid;
-        grid-template-areas:    "infoseek"
-                                "sysdesign"
-                                "knowledgeman"
+        grid-template-areas:    "textmining"
+                                "infoseek"
+                                "knowledge"
                                 "dataviz"
-                                "linkeddata"
-                                "usability";
+                                "usability"
+                                "linkeddata";
         grid-template-columns: auto;
         grid-template-rows: repeat(6, 1fr);
         grid-gap: 1em;
@@ -307,18 +307,19 @@ img.social-icon:hover {
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
+    width:100%;
 }
 
   /* Style the links inside the navigation bar */
   .topnav a {
     display: block;
-    float: right;
+    float: left;
     padding: 1em;
     text-decoration: none;
   }
 
   .topnav a:first-child {
-    float: left;
+    /* float: left; */
     font-weight: bolder;
   }
   .topnav a:not(:first-child) {
